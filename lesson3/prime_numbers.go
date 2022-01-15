@@ -43,7 +43,7 @@ func isPrimeNumber(number int) bool {
 	case 1, 2:
 		return true
 	default:
-		for divider := 2; divider < number; divider++ {
+		for divider := 2; divider < number / 2; divider++ {
 			if number % divider == 0 {
 				return false
 			}
